@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-            //Intent i=new Intent(getApplicationContext(), Login.class);
-            //startActivity(i);
+            Intent i=new Intent(getApplicationContext(), Login.class);
+            startActivity(i);
             //setContentView(R.layout.activity_login);
         }
 

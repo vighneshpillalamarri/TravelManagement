@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.travelmanagement.R;
+import com.example.travelmanagement.Registration;
 import com.example.travelmanagement.ui.login.LoginViewModel;
 import com.example.travelmanagement.ui.login.LoginViewModelFactory;
 
@@ -34,6 +36,7 @@ public class Login extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Intent i= getIntent();
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
@@ -118,7 +121,11 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
+public void onClick(View view)
+{
+    Intent i=new Intent(getApplicationContext(), Registration.class);
+    startActivity(i);
+}
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
