@@ -24,4 +24,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="SignIn">SignIn</string>
     <string name="Communicate">Communicate</string>
+    <string name="fire" />
+    <string name="dialog_fire_missiles" />
 </resources>

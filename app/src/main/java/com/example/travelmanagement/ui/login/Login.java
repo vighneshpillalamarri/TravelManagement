@@ -5,6 +5,8 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -120,6 +122,17 @@ public class Login extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         });
+    }
+    public void Show(View view)
+    {
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setMessage("Login Successfull");
+        builder.setPositiveButton("OK",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+        builder.show();
     }
 public void onClick(View view)
 {
