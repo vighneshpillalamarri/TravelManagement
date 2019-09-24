@@ -6,7 +6,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -25,10 +24,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.travelmanagement.MainActivity;
 import com.example.travelmanagement.R;
 import com.example.travelmanagement.Registration;
-import com.example.travelmanagement.ui.login.LoginViewModel;
-import com.example.travelmanagement.ui.login.LoginViewModelFactory;
 
 public class Login extends AppCompatActivity {
 
@@ -38,7 +36,6 @@ public class Login extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Intent i= getIntent();
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
@@ -118,21 +115,12 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 loadingProgressBar.setVisibility(View.VISIBLE);
+                Intent i=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
             }
         });
-    }
-    public void Show(View view)
-    {
-        AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setMessage("Login Successfull");
-        builder.setPositiveButton("OK",new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
-        builder.show();
     }
 public void onClick(View view)
 {
