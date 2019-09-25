@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "1000135253118",
-    "firebase_url": "https://travelmanagement-5a26a.firebaseio.com",
-    "project_id": "travelmanagement-5a26a",
-    "storage_bucket": "travelmanagement-5a26a.appspot.com"
+    "project_number": "1040332391850",
+    "firebase_url": "https://travelmanagement.firebaseio.com",
+    "project_id": "travelmanagement",
+    "storage_bucket": "travelmanagement.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1000135253118:android:f35791a119e81232",
+        "mobilesdk_app_id": "1:1040332391850:android:a7a3fc2a515331f4c757d3",
         "android_client_info": {
           "package_name": "com.example.travelmanagement"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1000135253118-hnh118gc5aiue4rp3n4i5etk5m5q3efm.apps.googleusercontent.com",
+          "client_id": "1040332391850-3jr5bqn1s5gfo4kjre0l1757l2t0v6lm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB6s5K-Q5Ov4aVR7V8WrHLggODzAOUufK0"
+          "current_key": "AIzaSyCYgFGpJG5rzRqsnlc2B1Dq_3RkhXOFJbk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1000135253118-hnh118gc5aiue4rp3n4i5etk5m5q3efm.apps.googleusercontent.com",
+              "client_id": "1040332391850-3jr5bqn1s5gfo4kjre0l1757l2t0v6lm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

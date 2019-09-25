@@ -15,6 +15,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -22,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -94,17 +96,13 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-            Intent i=new Intent(getApplicationContext(), Login.class);
+            Intent i=new Intent(getApplicationContext(), DriverStatus.class);
             startActivity(i);
-            //setContentView(R.layout.activity_login);
+        } else if (id == R.id.nav_slideshow) {
+            FirebaseAuth.getInstance().signOut();
+            Intent i=new Intent(getApplicationContext(), Main2Activity.class);
+            Toast.makeText(getApplicationContext(), "Logout Successfull", Toast.LENGTH_LONG).show();
+            startActivity(i);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

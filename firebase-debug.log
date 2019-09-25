@@ -1,0 +1,74 @@
+[debug] [2019-09-25T13:05:38.458Z] ----------------------------------------------------------------------
+[debug] [2019-09-25T13:05:38.460Z] Command:       E:\nodeJS\node.exe C:\Users\vighnesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-09-25T13:05:38.460Z] CLI Version:   7.3.2
+[debug] [2019-09-25T13:05:38.460Z] Platform:      win32
+[debug] [2019-09-25T13:05:38.460Z] Node Version:  v12.2.0
+[debug] [2019-09-25T13:05:38.461Z] Time:          Wed Sep 25 2019 18:35:38 GMT+0530 (India Standard Time)
+[debug] [2019-09-25T13:05:38.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-25T13:05:38.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-25T13:05:38.467Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Temp\TravelManagement
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-09-25T13:06:30.230Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-25T13:06:30.231Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-09-25T13:06:30.448Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-25T13:06:30.568Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2019-09-25T13:06:31.174Z] <<< HTTP RESPONSE 200
+[info] i  Using project travelmanagement (TravelManagement)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2019-09-25T13:06:45.568Z] >>> HTTP REQUEST GET https://travelmanagement.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2019-09-25T13:06:47.089Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-25T13:06:47.672Z] Error: EISDIR: illegal operation on a directory, open 'E:\Temp\TravelManagement'
+    at Object.openSync (fs.js:436:3)
+    at Object.writeFileSync (fs.js:1229:35)
+    at Config.writeProjectFile (C:\Users\vighnesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:179:8)
+    at C:\Users\vighnesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:25:23
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-09-25T13:07:00.170Z] ----------------------------------------------------------------------
+[debug] [2019-09-25T13:07:00.172Z] Command:       E:\nodeJS\node.exe C:\Users\vighnesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-09-25T13:07:00.172Z] CLI Version:   7.3.2
+[debug] [2019-09-25T13:07:00.172Z] Platform:      win32
+[debug] [2019-09-25T13:07:00.172Z] Node Version:  v12.2.0
+[debug] [2019-09-25T13:07:00.173Z] Time:          Wed Sep 25 2019 18:37:00 GMT+0530 (India Standard Time)
+[debug] [2019-09-25T13:07:00.173Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-25T13:07:00.178Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-25T13:07:00.178Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Temp\TravelManagement
+
