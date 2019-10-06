@@ -6,7 +6,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="map_key" translatable="false">AIzaSyCYiKTTF2WS6Joyu1NYGxFXb_vYi55FIoM</string>
+    <string name="map_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB_G-MakXyDG-2115QqaFdohyqaXquQA4s</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -27,5 +27,5 @@
     <string name="fire" />
     <string name="dialog_fire_missiles" />
     <string name="title_activity_main_flow">MainActivityFlow</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main2">Bus Tracking and Driver Profiling</string>
 </resources>
